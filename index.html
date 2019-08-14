@@ -11,12 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--
+<link rel="stylesheet" href="css/bootstrap.min.css">
  <script src="js/jquery.min.js" ></script>
  <script src="js/bootstrap.min.js" ></script>
     <script src="js/vue.min.js" ></script>
-  </head>
-
+  </head>-->
+   
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log("Service Worker Registered"))
+      .catch(e => console.log(e));
+  }
+</script>
   <body class="bg-dark">
   	
 <div id="app" class="container mt-4 mb-4">
