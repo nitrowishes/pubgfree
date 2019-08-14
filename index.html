@@ -106,27 +106,9 @@ Who got Free Service : <span class="badge badge-info">9,700</span>
 
 
 <script src="app.js" ></script>
+   
    <script>
-     function submit(){
-   var jsondata = {"name": $(".name").val(),"mobile": $(".mobile").val(), "address": $(".address").val()};
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://freepubgitems-3163.restdb.io/rest/users",
-  "method": "POST",
-  "headers": {
-    "content-type": "application/json",
-    "x-apikey": "5cb77e42814cf932876732e8",
-    "cache-control": "no-cache"
-  },
-  "processData": false,
-  "data": JSON.stringify(jsondata)
-}
-
-$.ajax(settings).done(function (response) {
-  alert(JSON.stringify(response));
-});
-     }
    </script>
+   
    </body>
 </html>
