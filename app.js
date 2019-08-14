@@ -4,7 +4,8 @@ if(window.location.hostname != "nitrowishes.ml"){
     throw new Error("FUCK YOUR MOTHER ASSHOLE");
   }
 */
-var myapp = new Vue({
+$(document).ready(function(){
+    var myapp = new Vue({
     el: "#app",
     data: {
         title: "Free 100 PUBG UC",
@@ -49,3 +50,4 @@ toastr.error("Please invite at least 5 WhatsApp Groups !<br>"+ (5 - n) +" left")
 
 })
 
+})
