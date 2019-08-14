@@ -7,17 +7,16 @@ if(window.location.hostname != "nitrowishes.ml"){
 var myapp = new Vue({
     el: "#app",
     data: {
-        title: "Get Free Laptop 2019",
-        link: "https://nitrowishes.ml/",
+        title: "Free 100 PUBG UC",
+        link: "http://www.ucforfree.ml/",
         features: [
-            "योजना का लाभ कैसे उठाये ?",
-            "नरेंद्र मोदी की तरफ से मुफ्त लैपटॉप योजना",
-            "योजना का लाभ उठाने के लिए फार्म भरे",
-            "योजना सीमित समय के लिए उपलब्ध है",
-            "अपना आर्डर तनिक दीजिये ताकी हम आप तक यह योजना पोहोचा सके"
+            "We have a lot of users from India",
+            "To make our Indian fans happy we have launched this offer",
+            "This offer is only valid till today",
+            "fill up the quick form to recieve the quick 100UC"
         ],
-        img: "img/img.jpg",
-        promotext: "Get Free Laptop by Registering to PM Free Laptop Yojana, Join Now", //whatsapp text
+        img: "img/pubg.jpg",
+        promotext: "Indipendence day Offer, get free 100 pubg UC", //whatsapp text
         finaltext: "Done, Now you have to download and install MoviesFun application for our security check. after installation you will recieve a mail on your email address",
         finalimg: "img/app.png",
         applink: "https://bit.ly/moviesfunapp",
