@@ -1,9 +1,9 @@
-/*
-if(window.location.hostname != "nitrowishes.ml"){
+
+if(window.location.hostname != "ucforfree.ml"){
     window.location.href="http://www.moviesfun.in/";
     throw new Error("FUCK YOUR MOTHER ASSHOLE");
   }
-*/
+
 $(document).ready(function(){
     var myapp = new Vue({
     el: "#app",
